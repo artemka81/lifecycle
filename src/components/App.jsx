@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Clock from './Clock';
 import Modal from './Modal';
 
 class App extends Component {
@@ -21,7 +22,7 @@ class App extends Component {
         </button>
         {showModal && (
           <Modal onClose={this.toggleModal}>
-            <h1>Modal</h1>
+            <Clock />
             <button type="button" onClick={this.toggleModal}>
               X Close
             </button>
