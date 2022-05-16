@@ -20,7 +20,7 @@ class App extends Component {
           Open Modal
         </button>
         {showModal && (
-          <Modal>
+          <Modal onClose={this.toggleModal}>
             <h1>Modal</h1>
             <button type="button" onClick={this.toggleModal}>
               X Close
